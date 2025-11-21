@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
-from database import init_db
 from flask_cors import CORS
 import os
+from database import init_db
 from ocr_engine import extract_plate_text
 from models import find_owner_by_plate, create_owner_vehicle
 from notification_service import send_email, send_sms
