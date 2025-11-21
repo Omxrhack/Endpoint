@@ -5,6 +5,7 @@ from ocr_engine import extract_plate_text
 from models import find_owner_by_plate, create_owner_vehicle
 from notification_service import send_email, send_sms
 
+init_db() 
 app=Flask(__name__); CORS(app)
 UPLOAD_FOLDER="uploads"; os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
