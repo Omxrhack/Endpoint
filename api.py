@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from database import init_db
 from flask_cors import CORS
 import os
 from ocr_engine import extract_plate_text
